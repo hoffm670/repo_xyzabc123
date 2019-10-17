@@ -1,0 +1,17 @@
+{
+    "Database": {
+        "host": "localhost",
+        "port": 27017,
+        "DB": "testDB",
+        "poolSize": 10,
+        "collection": "documents"
+    },
+    "Server": {
+        "port": 8080
+    },
+    "ExternalApi": {
+        "base": "http://redsky.target.com/v2/pdp/tcin/",
+        "params": "?excludes=taxonomy,price,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics",
+        "fillParams": "?excludes=taxonomy,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics"
+    }
+}

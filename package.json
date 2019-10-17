@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/hoffm670/target-myRetail#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^3.3.3",
+    "request": "^2.88.0"
   }
 }
