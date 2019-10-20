@@ -11,7 +11,7 @@ describe('GET /products/:id', function () {
     })
     it('Unknown Product ID (404)', function(done) {
         request(app)
-            .get('/products/13860420')
+            .get('/products/14860420')
             .expect(404, done)
     })
     it('Invalid ID return (404)', function(done) {
@@ -36,7 +36,7 @@ describe('PUT /products/:id', function () {
         }
     }
     unknown_body = {
-        "id": 13860420,
+        "id": 14860420,
         "current_price": {
             "value": 1.00,
             "currency_code": "USD"
@@ -62,7 +62,7 @@ describe('PUT /products/:id', function () {
     })
     it('Fails when giving unknown id (404)', function(done) {
         request(app)
-            .put('/products/13860420')
+            .put('/products/14860420')
             .send(unknown_body)
             .expect(404, done)
     })
