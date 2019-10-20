@@ -13,15 +13,6 @@ var mongodb
 MongoClient.connect(url, { useUnifiedTopology: true }, function (err, connection) {
     if (err) throw err;
     mongodb = connection.db(config.Database.DB)
-    // mongodb.collection(config.Database.collection).drop(function(err, delOK) {
-    //     if (err) throw err
-    //     if (delOK) console.log("Colection Deleted")
-    // })
-    // mongodb.collection(config.Database.collection).find({}, function(err, docs) {
-    //     docs.each(function(err, doc) {
-    //         console.log(doc)
-    //       });
-    // })
 });
 
 
