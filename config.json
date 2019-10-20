@@ -2,7 +2,7 @@
     "Database": {
         "host": "localhost",
         "port": 27017,
-        "DB": "testDB",
+        "DB": "testDB2",
         "poolSize": 10,
         "collection": "documents"
     },

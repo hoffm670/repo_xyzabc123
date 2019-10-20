@@ -2,9 +2,10 @@
   "name": "target-myretail",
   "version": "1.0.0",
   "description": "target recruiting case study myRetail",
-  "main": "server.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js",
+    "test": "mocha 'test/apiTest.js'"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,14 @@
   },
   "homepage": "https://github.com/hoffm670/target-myRetail#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "express-validator": "^6.2.0",
     "mongodb": "^3.3.3",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "supertest": "^4.0.2"
   }
 }
